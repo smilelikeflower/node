@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string = "sdjldjlde{name}kjjdls";
+        var re = /\{name\}/;
+        window.onload = function(){
+            var str = string.replace(re,'小明');
+            // alert(str)
+
+            var str = '20171001';
+            var arr = ["零","壹","贰","叁","肆","伍","陆","柒","捌","玖"];
+            // str = str.replace(/\d/g,function () {
+            // console.log(str);
+            // var num = arguments[0]; // 把捕获的内容，作为数组的下标
+            // return arr[num];
+            // });
+            // console.log(str); // 贰零壹柒壹零零壹
+            // restr = str.replace(/\d/g,function(){
+            //     var renum = arguments[0];
+            //     console.log(renum,',');
+            //     return arr[renum];
+            // });
+            // console.log(restr);
+            function aaa(){
+                console.log(arguments[0]);
+                
+            }; 
+            var arr1 = {id:1,name:'xxx',age:19};
+            aaa(arr1);
+            
+        }
+
+    </script>
+</body>
+</html>
